@@ -1,0 +1,205 @@
+,Sentence,Label
+0,"In the past few years, many artists have begun to explore neural networks as artistic tools, and their works have begun to appear in cutting-edge “Artificial Intelligence” art shows as well",Neural network artworks
+1,"
+In computer vision and perceptual psychology, image perception is often analyzed in terms of visual cues",Neural network artworks
+2,"
+In other words, modern neural models lend themselves to creating interesting imagery, because they were designed modern real images, and so modifying them creates realistic but unreal images",Neural network artworks
+3,"
+The most prominent tool in neural art at the moment is the Generative Adversarial Network (GAN)",Neural network artworks
+4,"
+Given a large collection of images of a specific class (such as faces or landscapes), a GAN is trained to produce new images that look like they also came from that class",Neural network artworks
+5,"
+However, GANs operate in terms of image cues that are difficult to explain; they are not just manipulating simple properties like color and texture",Neural network artworks
+6,"
+GANs are the latest in a long line of research in natural image modeling",Neural network artworks
+7,"
+Vision neuroscience has long sought to build statistical models of “natural images,” originally referring to images in prehistorical environments, but now referring to any realistic photos of the world",Neural network artworks
+8,"
+The Generator is optimized according to the Discriminator, which is a classification network meant to recognize whether images are “real”",Neural network artworks
+9,"
+In other words, GAN generator nets have learned how to plausibly compose objects together in scenes and to texture the object parts, following the instructions encoded in the vector z",Neural network artworks
+10,"
+This method was trained on ImageNet, an enormous and diverse collection of real-world images; based on the training details in the paper, it has been estimated that model training used an amount of power consumption equivalent to a typical US household’s usage over 6 months",Neural network artworks
+11,"
+Much of the work that artists do with GANs is to explore the latent space and experiment with different ways to generate z vectors",Neural network artworks
+12,"
+We now apply the theory to image stylization algorithms",Neural network artworks
+13,"
+These algorithms take a natural image as input and output a stylized version, such as a painting",Neural network artworks
+14,"
+They often express this task as an optimization that trades-off two goals: producing an image that has the overall appearance and structure of the given photograph, while also constructing the image from style elements, such as paint strokes or tiles",Neural network artworks
+15,"
+That is, the image appears to be a real scene but also appears to be composed of unrelated texture",Neural network artworks
+16,"
+Neural image translation methods, like pix2pix and CycleGAN, learn to transform images, given before-and-after pairs as training",Neural network artworks
+17,"
+Rather than attemping to model natural images, they model image transformations",Neural network artworks
+18,"
+In this case, the GAN creates a new visual style for input imagery, rather than creating new imagery from scratch",Neural network artworks
+19,"
+Another class of works also arose from attempts to visualize neural network classifiers",Neural network artworks
+20,"
+Tom White’s “Perception Engines” series combines classifier visualization with stroke-based optimization, while producing an intriguing new take on abstract art",Neural network artworks
+21,"
+These images are optimized according to natural image classifiers that are trained to distinguish photographs from one another, for example, looking for cues that distinguish photos of, say, violins from any other object class",Neural network artworks
+22,"
+In each of these cases, there is a tension between the apparent abstraction of the image strokes and the object class cues specified by the classifier",Neural network artworks
+23,"
+Given ongoing battles in our society over which kinds of images are offensive and why, they provide an interesting example of how something can seem somehow “obscene” while being purely abstract",Neural network artworks
+24,"
+As described above, realistic drawings get some of their appeal from depicting natural scenes with specific style elements",Neural network artworks
+25,"
+This suggests the following interpretation of Pollock’s paintings: they are interesting because they juxtapose some overall cues of natural scenes with fine details that are completely non-naturalistic",Neural network artworks
+26,"
+His entirely-abstract Ocean Park series explicitly references landscapes in the title, the colors, and the layout of abstract shapes",Neural network artworks
+27,"
+In this way, Tom White’s abstract stroke arrangements can be thought of as an implementation of an explicit model of some abstract expressionism: creating abstract arrangements with some of the statistics of natural images",Neural network artworks
+28,"
+This paper presents a sort of recipe for making interesting images: begin with the latest research in natural image modeling, and then modify some elements of the model while preserving others",Neural network artworks
+29,"
+As new models are developed, trained, and released in the coming years, we can expect that artists will continue to seize on these models and exploit them to create new and fascinating imagery",Neural network artworks
+30,"
+Even if new GANs become flawless, artists will still tweak them to produce surprising new imagery",Neural network artworks
+31,"
+In fine art, especially painting, humans have mastered the skill to create unique visual experiences through composing a complex interplay between the content and style of an image",Neural network artworks
+32,"
+Thus far the algorithmic basis of this process is unknown and there exists no artificial system with similar capabilities",Neural network artworks
+33,"
+Here we introduce an artificial system based on a Deep Neural Network that creates artistic images of high perceptual quality",Neural network artworks
+34,"
+The system uses neural representations to separate and recombine content and style of arbitrary images, providing a neural algorithm for the creation of artistic images",Neural network artworks
+35,"
+The class of Deep Neural Networks that are most powerful in image processing tasks are called Convolutional Neural Networks",Neural network artworks
+36,"
+Each layer of units can be understood as a collection of image filters, each of which extracts a certain feature from the input image",Neural network artworks
+37,"
+When Convolutional Neural Networks are trained on object recognition, they develop a representation of the image that makes object information increasingly explicit along the processing hierarchy",Neural network artworks
+38,"
+We can directly visualise the information each layer contains about the input image by reconstructing the image only from the feature maps in that layer (Fig 1, content reconstructions, see Methods for details on how to reconstruct the image)",Neural network artworks
+39,"
+To obtain a representation of the style of an input image, we use a feature space originally designed to capture texture information",Neural network artworks
+40,"
+While the number of different filters increases along the processing hierarchy, the size of the filtered images is reduced by some downsampling mechanism (e",Neural network artworks
+41,g,Neural network artworks
+42, max-pooling) leading to a decrease in the total number of units per layer of the network,Neural network artworks
+43,"
+A given input image is represented as a set of filtered images at each processing stage in the CNN",Neural network artworks
+44,"
+On top of the original CNN representations we built a new feature space that captures the style of an input image",Neural network artworks
+45,"
+Moreover, the size and complexity of local image structures from the input image increases along the hierarchy, a result that can be explained by the increasing receptive field sizes and feature complexity",Neural network artworks
+46,"
+That is, we can manipulate both representations independently to produce new, perceptually meaningful images",Neural network artworks
+47,"
+When matching the style representations up to higher layers in the network, local images structures are matched on an increasingly large scale, leading to a smoother and more continuous visual experience",Neural network artworks
+48,"
+Thus, the visually most appealing images are usually created by matching the style representation up to the highest layers in the network",Neural network artworks
+49,"
+When synthesising an image that combines the content of one image with the style of another, there usually does not exist an image that perfectly matches both constraints at the same time",Neural network artworks
+50,"
+A strong emphasis on style will result in images that match the appearance of the artwork, effectively giving a texturised version of it, but hardly show any of the photograph’s content",Neural network artworks
+51,"
+Here we present an artificial neural system that achieves a separation of image content from style, thus allowing to recast the content of one image in the style of any other image",Neural network artworks
+52,"
+In particular, we derive the neural representations for the content and style of an image from the feature responses of highperforming Deep Neural Networks trained on object recognition",Neural network artworks
+53,"
+Conceptually most closely related are methods using texture transfer to achieve artistic style transfer",Neural network artworks
+54,"
+In contrast, by using Deep Neural Networks trained on object recognition, we carry out manipulations in feature spaces that explicitly represent the high level content of an image",Neural network artworks
+55,"
+Features from Deep Neural Networks trained on object recognition have been previously used for style recognition in order to classify artworks according to the period in which they were created",Neural network artworks
+56,"
+We conjecture that a transformation into a stationary feature space such as our style representation might achieve even better performance in style classification",Neural network artworks
+57,"
+All in all it is truly fascinating that a neural system, which is trained to perform one of the core computational tasks of biological vision, automatically learns image representations that allow the separation of image content from style",Neural network artworks
+58,"
+Thus, our ability to abstract content from style and therefore our ability to create and enjoy art might be primarily a preeminent signature of the powerful inference capabilities of our visual system",Neural network artworks
+59,"
+In texture transfer the goal is to synthesise a texture from a source image while constraining the texture synthesis in order to preserve the semantic content of a target image",Neural network artworks
+60,"
+Most previous texture transfer algorithms rely on these nonparametric methods for texture synthesis while using different ways to preserve the structure of the target image",Neural network artworks
+61,"
+Although these algorithms achieve remarkable results, they all suffer from the same fundamental limitation: they use only low-level image features of the target image to inform the texture transfer",Neural network artworks
+62,"
+Here we demonstrate how to use feature representations from high-performing Convolutional Neural Networks to transfer image style between arbitrary images",Neural network artworks
+63,"
+While this is less of an issue in the artistic style transfer, the problem becomes more apparent when both, content and style images, are photographs and the photorealism of the synthesised image is affected",Neural network artworks
+64,"
+Artistic stylisation of images is traditionally studied in computer graphics under the label of non-photorealistic rendering",Neural network artworks
+65,"
+This paper presents a multi-stage machine learning approach to the problem of semantic categorization of images depicting fine art paintings",Neural network artworks
+66,"
+The ability to recognize an artistic style in fine art paintings is an attribute of highly educated and experienced art scholars who spend years analyzing and learning the specifics and nuances of the fine art objects",Neural network artworks
+67,"
+Due to the rapidly expanding availability of the online galleries, as well as various other sources of fine art pictures, fine art has become accessible to the masses, which in turn created a need to make the art expertise more easily available to the public",Neural network artworks
+68,"
+Machine-based art expertise can be used in automatic image retrieval, in art classes and in labeling of unsigned paintings at auction houses",Neural network artworks
+69,"
+In visual arts, style is defined as a set of distinctive elements that can be associated with a specific artistic movement, school or time period",Neural network artworks
+70,"
+Transfer learning allows the adaptation or reuse of a network model that has been trained for a specific task using a very large dataset to perform a new, related task for which only a small dataset is available",Neural network artworks
+71,"
+One of the possible reasons is that standard CNN architectures, used in most studies, require a fixed input image size that is in most cases, significantly smaller than the high-resolution art images offered by fine art datasets",Neural network artworks
+72,"
+To address this problem, a sub-region approach was introduced in which the original image is divided into smaller regions (or image patches), where the size of each patch matches the standard image input size required by the CNN model",Neural network artworks
+73,"
+First, the proposed approach divides the input image into patches and applies a deep neural network to train and classify each patch",Neural network artworks
+74,"
+The fine art classification task has been addressed through a wide range of methods",Neural network artworks
+75,"
+Twenty-five styles represented by a large dataset of digitized paintings were categorized using features generated by a pre-trained CNN model",Neural network artworks
+76,"
+Further improvement of style classification was achieved through the application of transfer learning with the CNN model used to do both, feature learning and label inference",Neural network artworks
+77,"
+The findings revealed a strong correlation between the CNN features and the chronology of paintings",Neural network artworks
+78,"
+The study implemented the SVM model trained on features extracted from the CNN model to perform a binary identification of Vincent van Gogh’s paintings",Neural network artworks
+79,"
+Artist recognition based images of paper prints of artworks were performed using the average score obtained by independent CNNs trained on different image scales",Neural network artworks
+80,"
+A complex three-branch CNN structure was trained using a dataset of 2338 images with 13 categories to classify paintings by style",Neural network artworks
+81,"
+While the first stage deep CNN classifier is trained on images, the second stage shallow NN is trained on the class-probability vectors resulting from the first stage classification",Neural network artworks
+82,"
+Three datasets of digital images of paintings collated from publicly available fine art collections, with the addition of an Australian Aboriginal art dataset created by the authors, were used to empirically validate the efficacy of the proposed method",Neural network artworks
+83,"
+The stylistic classes were balanced, and each class was represented by 5145 images (16",Neural network artworks
+84,66% of the total number of pictures),Neural network artworks
+85,"
+It confirms the benefits of having a second-stage classifier trained not on the images but on the class-probability vectors",Neural network artworks
+86,"
+It can be noticed that the higher the CNN complexity, the better the classification outcomes disregarding the method and the database",Neural network artworks
+87,"
+A new machine learning method for automatic fine art style classification was presented and evaluated",Neural network artworks
+88,"
+In this paper we will talk about the development of computer programs capable of creating artworks",Neural network artworks
+89,"
+The vast majority of AI applications in the field of the arts falls into two categories: Systems performing some sort of art understanding task, such as musical analysis, and systems that work as “intelligent” tools for human artists (Spector & Alpern 1994); and a new range of applications that is beginning to emerge, the constructed artists which “are supposed to be capable of creating aesthetically meritorious artworks on their own, with minimal human intervention",Neural network artworks
+90,"
+In the development of a model for a “constructed artist”, we took into consideration the previously referred characteristics that a constructed artist should have",Neural network artworks
+91,"
+For the generation of the images, we rely on a Genetic Algorithm",Neural network artworks
+92,"
+This type of approach relies on the assumption that the combination of two highly fit images results, at least generally, in a fit image",Neural network artworks
+93,"
+In the proposed system, a convolutional neural network is learned so that images can be classified into a group based on a touch, with saturation and value and the histogram of saturation and value as input data, and the trained network is used to realize the retrieval",Neural network artworks
+94," 
+Then, the image and the normalized feature vector corresponding to the image are associated and stored in the database",Neural network artworks
+95,"
+In this paper, we explore the secret nature of human painting and propose an automatic image-to-painting translation method that generates vivid and realistic paintings with controllable styles",Neural network artworks
+96,"
+Our method can “draw” in a variety of painting styles, e",Neural network artworks
+97,g,Neural network artworks
+98," oil-painting brush, watercolor ink, marker-pen, and tape art",Neural network artworks
+99,"
+We test our method on various real-world images and photos, including human portraits, animals, scenery, daily objects, art photography, and cartoon images",Neural network artworks
+100,"
+We propose a new method for stroke based image-topainting translation",Neural network artworks
+101,"
+To build a neural renderer, a general practice is to build a deep convolutional network and train it to imitate the behavior of a graphic engine",Neural network artworks
+102,"
+We can see that our method successfully learns high-level abstractions of the characters and vividly portrays their shape and color",Neural network artworks
+103,"
+We can see our method generates more vivid results with a clear distinction on brush textures, while the method “Learning-to-Paint” tends to produce blurred results",Neural network artworks
+104,"
+We consider this artistic creation process under a stroke parameter searching paradigm that maximizes the similarity between the sequentially rendered canvas and the refe",Neural network artworks
