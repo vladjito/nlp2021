@@ -1,0 +1,100 @@
+Pattern recognition is a data analysis method that uses machine learning algorithms to automatically recognize patterns and regularities in data.
+Pattern recognition systems can recognize familiar patterns quickly and accurately.
+Pattern recognition has a variety of applications, including image processing, speech and fingerprint recognition, aerial photo interpretation, optical character recognition in scanned documents such as contracts and photographs, and even medical imaging and diagnosis.
+Pattern recognition is also the technology behind data analytics. For example, the technique can be used to predict stock market outcomes.
+Facial recognition uses machine learning algorithms to map a person’s facial features, matching their unique characteristics to data points stored in a database.
+Retailers have begun using face recognition to catch and deter shoplifters.
+Even healthcare organizations are exploring new ways to use facial recognition to improve the patient experience
+Follow this guide to learn how to perform real-time image recognition in an ML application.
+Voice recognition is a deep learning technique used to identify, distinguish, and authenticate a particular person’s voice. It evaluates an individual’s unique voice biometrics, including frequency and flow of pitch, and natural accent.
+Speech recognition recognizes spoken words; voice recognition identifies the speaker.
+Voice recognition is most often used as a security measure to confirm the identity of a speaker.
+Voice recognition is a contactless, software-based technology, making it one of the most convenient and readily accepted types of biometrics
+Voice recognition is arguably the most high-profile example of the power of artificial intelligence.
+Recognition Technologies & Arm have published a white paper that provides technical insight into the architecture and design approach that’s making the gateway a more powerful, efficient place for voice recognition.
+Combining speaker & speech recognition for intelligent assistants
+We’re shutting down the Face Recognition system on Facebook
+People who’ve opted in will no longer be automatically recognized in photos and videos and we will delete more than a billion people’s individual facial recognition templates.
+We need to weigh the positive use cases for facial recognition against growing societal concerns, especially as regulators have yet to provide clear rules.
+In the coming weeks, Meta will shut down the Face Recognition system on Facebook as part of a company-wide move to limit the use of facial recognition in our products
+As part of this change, people who have opted in to our Face Recognition setting will no longer be automatically recognized in photos and videos, and we will delete the facial recognition template used to identify them.
+This change will represent one of the largest shifts in facial recognition usage in the technology’s history.
+More than a third of Facebook’s daily active users have opted in to our Face Recognition setting and are able to be recognized, and its removal will result in the deletion of more than a billion people’s individual facial recognition templates.
+Making this change required careful consideration, because we have seen a number of places where face recognition can be highly valued by people using platforms.
+AI to generate descriptions of images for people who are blind and visually impaired, uses the Face Recognition system to tell them when they or one of their friends is in an image.
+These features are also powered by the Face Recognition system which we are shutting down.
+Looking ahead, we still see facial recognition technology as a powerful tool, for example, for people needing to verify their identity, or to prevent fraud and impersonation.
+We believe facial recognition can help for products like these with privacy, transparency and control in place, so you decide if and how your face is used.
+But the many specific instances where facial recognition can be helpful need to be weighed against growing concerns about the use of this technology as a whole.
+There are many concerns about the place of facial recognition technology in society, and regulators are still in the process of providing a clear set of rules governing its use.
+Amid this ongoing uncertainty, we believe that limiting the use of facial recognition to a narrow set of use cases is appropriate.
+These are places where facial recognition is both broadly valuable to people and socially acceptable, when deployed with care.
+Facial recognition can be particularly valuable when the technology operates privately on a person’s own devices.
+This method of on-device facial recognition, requiring no communication of face data with an external server, is most commonly deployed today in the systems used to unlock smartphones.
+People will no longer be able to turn on face recognition for suggested tagging or see a suggested tag with their name in photos and videos they may appear in.
+Ending the use of our existing Face Recognition system means the services it enables will be removed over the coming weeks, as will the setting allowing people to opt into the system.
+After the change, AAT will still be able to recognize how many people are in a photo, but will no longer attempt to identify who each person is using facial recognition.
+If you have opted into our Face Recognition setting, we will delete the template used to identify you.
+If you have the face recognition setting turned off, there is no template to delete and there will be no change.
+In the case of facial recognition, its long-term role in society needs to be debated in the open, and among those who will be most impacted by it.
+Recognize and manipulate faces from Python or from the command line with the world's simplest face recognition library.
+Built using dlib's state-of-the-art face recognition built with deep learning.
+This also provides a simple face_recognition command line tool that lets you do face recognition on a folder of images from the command line!
+A facial recognition system is a technology capable of matching a human face from a digital image or a video frame against a database of faces, typically employed to authenticate users through ID verification services, works by pinpointing and measuring facial features from a given image.
+Because computerized facial recognition involves the measurement of a human's physiological characteristics, facial recognition systems are categorized as biometrics.
+Although the accuracy of facial recognition systems as a biometric technology is lower than iris recognition and fingerprint recognition, it is widely adopted due to its contactless process.
+Facial recognition systems have been deployed in advanced human-computer interaction, video surveillance and automatic indexing of images
+Facial recognition systems are employed throughout the world today by governments and private companies.
+The use of facial recognition systems has also raised controversy, with claims that the systems violate citizens' privacy, commonly make incorrect identifications, encourage gender norms and racial profiling, and do not protect important biometric data.
+These claims have led to the ban of facial recognition systems in several cities in the United States.
+As a result of growing societal concerns Meta announced[5] that it plans to shut down Facebook facial recognition system, deleting the face scan data of more than one billion users.
+Automated facial recognition was pioneered in the 1960s
+Their early facial recognition project was dubbed "man-machine" because the coordinates of the facial features in a photograph had to be established by a human before they could be used by the computer for recognition.
+Nonetheless, interest in the subject grew and in 1977 Kanade published the first detailed book on facial recognition technology
+Face recognition systems that had been trialed in research labs were evaluated and the FERET tests found that while the performance of existing automated facial recognition systems varied
+The FERET tests spawned three US companies that sold automated facial recognition systems
+Following the 1993 FERET face recognition vendor test the Department of Motor Vehicles (DMV) offices in West Virginia and New Mexico were the first DMV offices to use automated facial recognition systems
+This enabled DMV offices to deploy the facial recognition systems on the market to search photographs for new driving licenses against the existing DMV database.
+DMV offices became one of the first major markets for automated facial recognition technology and introduced US citizens to facial recognition as a standard method of identification
+The increase of the US prison population in the 1990s prompted U.S. states to established connected and automated identification systems that incorporated digital biometric databases, in some instances this included facial recognition.
+In 1999 Minnesota incorporated the facial recognition system FaceIT by Visionics into a mug shot booking system that allowed police, judges and court officers to track criminals across the state
+Until the 1990s facial recognition systems were developed primarily by using photographic portraits of human faces
+Research on face recognition to reliably locate a face in an image that contains other objects gained traction in the early 1990s with the principle component analysis
+Pentland in 1994 defined Eigenface features, including eigen eyes, eigen mouths and eigen noses, to advance the use of PCA in facial recognition
+In 1997 the PCA Eigenface method of face recognition[15] was improved upon using linear discriminant analysis
+LDA Fisherfaces became dominantly used in PCA feature based face recognition.
+Purely feature based approaches to facial recognition were overtaken in the late 1990s by the Bochum system, which used Gabor filter to record the face features and computed a grid of the face structure to link the features
+Paul Viola and Michael Jones combined their face detection method with the Haar-like feature approach to object recognition in digital images to launch AdaBoost, the first real-time frontal-view face detector.
+Therefore, the Viola-Jones algorithm has not only broadened the practical application of face recognition systems but has also been used to support new features in user interfaces and teleconferencing
+While humans can recognize faces without much effort,[24] facial recognition is a challenging pattern recognition problem in computing.
+Facial recognition systems attempt to identify a human face, which is three-dimensional and changes in appearance with lighting and facial expression, based on its two-dimensional image.
+To accomplish this computational task, facial recognition systems perform four steps. First face detection is used to segment the face from the image background.
+Some face recognition algorithms identify facial features by extracting landmarks, or features, from an image of the subject's face
+Other algorithms normalize a gallery of face images and then compress the face data, only saving the data in the image that is useful for face recognition.
+Recognition algorithms can be divided into two main approaches: geometric, which looks at distinguishing features, or photo-metric, which is a statistical approach that distills an image into values and compares the values with templates to eliminate variances
+Popular recognition algorithms include principal component analysis using eigenfaces, linear discriminant analysis, elastic bunch graph matching using the Fisherface algorithm, the hidden Markov model, the multilinear subspace learning using tensor representation, and the neuronal motivated dynamic link matching
+To enable human identification at a distance (HID) low-resolution images of faces are enhanced using face hallucination. In CCTV imagery faces are often very small. But because facial recognition algorithms that identify and plot facial features require high resolution images, resolution enhancement techniques have been developed to enable facial recognition systems to work with imagery that has been captured in environments with a high signal-to-noise ratio
+Face hallucination algorithms that are applied to images prior to those images being submitted to the facial recognition system use example-based machine learning with pixel substitution or nearest neighbour distribution indexes that may also incorporate demographic and age related facial characteristics
+Use of face hallucination techniques improves the performance of high resolution facial recognition algorithms and may be used to overcome the inherent limitations of super-resolution algorithms.
+Three-dimensional face recognition technique uses 3D sensors to capture information about the shape of a face
+One advantage of 3D face recognition is that it is not affected by changes in lighting like other techniques.
+Three-dimensional data points from a face vastly improve the precision of face recognition
+3D-dimensional face recognition research is enabled by the development of sophisticated sensors that project structured light onto the face.
+A different form of taking input data for face recognition is by using thermal cameras, by this procedure the cameras will only detect the shape of the head and it will ignore the subject accessories such as glasses, hats, or makeup
+However, the databases for face recognition are limited.
+Current thermal face recognition systems are not able to reliably detect a face in a thermal image that has been taken of an outdoor environment.
+Known as a cross-spectrum synthesis method due to how it bridges facial recognition from two different imaging modalities
+In June 2020, Tiktok released a statement regarding the "For You" page, and how they recommended videos to users, which did not include facial recognition
+Tiktok agreed to a $92 million settlement to a US lawsuit which alleged that the app had used facial recognition in both user videos and its algorithm to identify age, gender and ethnicity
+The emerging use of facial recognition is in the use of ID verification services.
+Face recognition has been leveraged as a form of biometric authentication for various computing platforms and devices;
+The Australian Border Force and New Zealand Customs Service have set up an automated border processing system called SmartGate that uses face recognition, which compares the face of the traveller with the data in the e-passport microchip
+All Canadian international airports use facial recognition as part of the Primary Inspection Kiosk program that compares a traveler face to their photo stored on the ePassport
+Police forces in the United Kingdom have been trialing live facial recognition technology at public events since 2015.
+In May 2017, a man was arrested using an automatic facial recognition (AFR) system mounted on a van operated by the South Wales Police
+The report also revealed that two UK police forces, South Wales Police and the Metropolitan Police, were using live facial recognition at public events and in public spaces
+In September 2019, South Wales Police use of facial recognition was ruled lawful.[68] Live facial recognition has been trialled since 2016 in the streets of London and will be used on a regular basis from Metropolitan Police from beginning of 2020.[69] In August 2020 the Court of Appeal ruled that the way the facial recognition system had been used by the South Wales Police in 2017 and 2018 violated human rights
+The U.S. Department of State operates one of the largest face recognition systems in the world with a database of 117 million American adults, with photos typically drawn from driver's license photos
+As of 2016, facial recognition was being used to identify people in photos taken by police in San Diego and Los Angeles
+In recent years Maryland has used face recognition by comparing people's faces to their driver's license photos.
+The FBI has also instituted its Next Generation Identification program to include face recognition
